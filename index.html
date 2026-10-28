@@ -89,7 +89,6 @@
           <button type="button" id="copyButton">コードをコピー</button>
         </div>
         <p class="muted">上のコードをコピーし、Museの画面で入力してください。</p>
-        <div class="notice"><strong>公開前に必ず設定：</strong>「BFIG0Y」をご自身の有効な招待コードに置き換えてください。特典の内容・入力期限・利用上限は、アプリ内の最新表示を確認してから追記してください。</div>
         <p id="copyStatus" class="small" aria-live="polite"></p>
       </div>
     </div>
@@ -155,7 +154,7 @@
 <footer>
   <div class="wrap">
     <p><strong>Muse Guide</strong> — 招待コード・使い方ガイド</p>
-    <p>運営者：サイト公開前に運営者情報・お問い合わせ先を必要に応じて追加してください。</p>
+    <p>招待コードや利用条件は、Muse公式アプリ内の最新案内をご確認ください。</p>
     <p>最終更新日：2026年10月28日</p>
   </div>
 </footer>
@@ -166,8 +165,8 @@
   const copyStatus = document.getElementById('copyStatus');
   copyButton.addEventListener('click', async () => {
     const code = inviteCode.textContent.trim();
-    if (!code || code === 'BFIG0Y') {
-      copyStatus.textContent = '公開前にBFIG0Yを実際の招待コードに置き換えてください。';
+    if (!code) {
+      copyStatus.textContent = '招待コードが設定されていません。';
       return;
     }
     try {
