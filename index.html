@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Museの招待コード・使い方ガイド｜登録方法と特典</title>
+  <meta name="description" content="MetaのパーソナルAIエージェントMuseの始め方、招待コードの入力方法、できること、利用時の注意点を初心者向けに解説します。">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Museの招待コード・使い方ガイド">
+  <meta property="og:description" content="Museの始め方と招待コードの入力方法をわかりやすく紹介。">
+  <meta property="og:url" content="">
+  <style>
+    :root { color-scheme: light; --ink:#202124; --muted:#5f6368; --line:#e7e8eb; --soft:#f7f8fa; --accent:#6558d3; --accent2:#4d42b5; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:#fff; line-height:1.75; }
+    a { color:var(--accent2); text-underline-offset:3px; }
+    .wrap { width:min(960px, calc(100% - 36px)); margin-inline:auto; }
+    header { border-bottom:1px solid var(--line); background:rgba(255,255,255,.96); }
+    .nav { min-height:66px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+    .brand { font-weight:800; letter-spacing:-.03em; color:var(--ink); text-decoration:none; }
+    .nav a:last-child { font-size:.92rem; }
+    .hero { padding:68px 0 54px; background:linear-gradient(180deg,#fafaff 0%,#fff 100%); }
+    .eyebrow { display:inline-block; color:var(--accent2); background:#efedff; border-radius:999px; padding:4px 12px; font-size:.82rem; font-weight:700; }
+    h1 { font-size:clamp(2rem,5vw,3.35rem); line-height:1.22; letter-spacing:-.045em; margin:18px 0; }
+    .lead { color:#4d5156; font-size:1.08rem; max-width:720px; }
+    .cta { display:inline-flex; justify-content:center; align-items:center; gap:8px; margin-top:22px; padding:13px 20px; border-radius:12px; background:var(--accent); color:white; font-weight:750; text-decoration:none; box-shadow:0 5px 16px #6558d326; }
+    .cta:hover { background:var(--accent2); }
+    .section { padding:42px 0; }
+    h2 { font-size:clamp(1.45rem,3vw,2rem); line-height:1.35; margin:0 0 18px; letter-spacing:-.025em; }
+    h3 { font-size:1.12rem; margin:0 0 8px; }
+    p { margin:0 0 14px; }
+    .muted { color:var(--muted); font-size:.92rem; }
+    .card { border:1px solid var(--line); border-radius:18px; padding:22px; background:#fff; }
+    .code-card { margin-top:26px; border:1px solid #dedafc; background:#fff; border-radius:18px; padding:22px; max-width:660px; box-shadow:0 8px 28px #3020800b; }
+    .code-label { color:var(--muted); font-size:.88rem; font-weight:650; }
+    .code-row { display:flex; align-items:center; gap:10px; margin:10px 0 12px; }
+    code { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; }
+    .code { flex:1; border:1px dashed #c7c2ef; border-radius:10px; background:#f9f8ff; padding:12px 14px; font-size:1.25rem; font-weight:800; letter-spacing:.12em; overflow-wrap:anywhere; }
+    button { border:0; border-radius:10px; padding:12px 15px; background:#292640; color:#fff; font:inherit; font-weight:700; cursor:pointer; white-space:nowrap; }
+    button:hover { background:#44405d; }
+    .notice { margin-top:12px; border-radius:10px; padding:12px 14px; background:#fff8e8; color:#6d4d00; font-size:.9rem; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
+    .step { background:var(--soft); border-radius:14px; padding:18px; }
+    .num { display:inline-grid; place-items:center; width:32px; height:32px; border-radius:50%; background:#eae7ff; color:var(--accent2); font-weight:800; margin-bottom:12px; }
+    .faq { border-top:1px solid var(--line); padding:18px 0; }
+    .faq:last-child { border-bottom:1px solid var(--line); }
+    .faq h3 { font-size:1.03rem; }
+    .sources { background:var(--soft); border-radius:16px; padding:20px; }
+    footer { margin-top:24px; padding:28px 0 44px; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; }
+    .small { font-size:.82rem; color:var(--muted); }
+    @media (max-width:700px) { .hero{padding:48px 0 38px}.grid{grid-template-columns:1fr}.code-row{align-items:stretch; flex-direction:column}button{width:100%}.section{padding:32px 0}.card{padding:18px} }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Museとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"MuseはMetaが提供するパーソナルAIエージェントです。質問への回答だけでなく、計画づくりや一部の作業の実行を支援します。"}},
+      {"@type":"Question","name":"Museはどこから利用できますか？","acceptedAnswer":{"@type":"Answer","text":"Metaの発表では、iOS、Android、Webで提供されています。最新の対応状況は公式ページで確認してください。"}},
+      {"@type":"Question","name":"招待コードの特典や期限は？","acceptedAnswer":{"@type":"Answer","text":"特典・入力期限・対象条件は変更される可能性があります。登録後のMuseアプリや公式画面に表示される条件を確認してください。"}}
+    ]
+  }
+  </script>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#">Muse Guide</a>
+    <a href="#invite">招待コードを見る ↓</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">初心者向け・Museガイド</span>
+      <h1>Museの招待コードと<br>始め方をわかりやすく解説</h1>
+      <p class="lead">MetaのパーソナルAIエージェント「Muse」について、できること、始め方、招待コードの入力手順をまとめました。登録前に確認したい方も、すでに始めた方もご活用ください。</p>
+      <a class="cta" href="https://muse.ai/join" target="_blank" rel="noopener noreferrer">Muse公式ページを開く ↗</a>
+
+      <div class="code-card" id="invite">
+        <div class="code-label">招待コード</div>
+        <div class="code-row">
+          <code class="code" id="inviteCode">BFIG0Y</code>
+          <button type="button" id="copyButton">コードをコピー</button>
+        </div>
+        <p class="muted">上のコードをコピーし、Museの画面で入力してください。</p>
+        <div class="notice"><strong>公開前に必ず設定：</strong>「BFIG0Y」をご自身の有効な招待コードに置き換えてください。特典の内容・入力期限・利用上限は、アプリ内の最新表示を確認してから追記してください。</div>
+        <p id="copyStatus" class="small" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Museとは？</h2>
+      <p>MuseはMetaが提供するパーソナルAIエージェントです。質問に答えるだけでなく、目標に合わせた計画づくりや、対応するサービスを使った作業を支援します。実際に使える機能や連携先は、地域・アカウント・提供状況によって異なる場合があります。</p>
+      <div class="grid">
+        <article class="card">
+          <h3>計画づくりを支援</h3>
+          <p>やりたいことを伝え、手順や段取りを整理するのに役立ちます。</p>
+        </article>
+        <article class="card">
+          <h3>作業をサポート</h3>
+          <p>対応する機能では、ブラウザ操作などのタスクを進められます。</p>
+        </article>
+        <article class="card">
+          <h3>サービスと連携</h3>
+          <p>連携できるサービスや必要な権限を、利用前に確認しましょう。</p>
+        </article>
+      </div>
+      <p class="muted" style="margin-top:14px">出典：<a href="https://about.fb.com/ja/news/2026/10/muse-personal-ai-agent-launches-in-japan/" target="_blank" rel="noopener noreferrer">Meta公式発表（日本での提供開始）</a></p>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fafafa">
+    <div class="wrap">
+      <h2>Museの始め方</h2>
+      <div class="grid">
+        <article class="step"><span class="num">1</span><h3>公式ページを開く</h3><p>下のボタンからMuseの公式ページへ進みます。</p><a href="https://muse.ai/join" target="_blank" rel="noopener noreferrer">Museに参加する ↗</a></article>
+        <article class="step"><span class="num">2</span><h3>登録・初期設定を行う</h3><p>画面の案内に従って登録し、利用を開始します。</p></article>
+        <article class="step"><span class="num">3</span><h3>招待コードを入力する</h3><p>アプリ内の案内に従って、上部に掲載したコードを入力します。期限や条件を確認してください。</p></article>
+      </div>
+      <p class="muted" style="margin-top:16px">招待コードの入力場所・期限・特典は変更される可能性があります。最新のアプリ内表示を優先してください。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>招待コードに関するよくある質問</h2>
+      <div class="faq"><h3>Q. 招待コードはどこで入力できますか？</h3><p>登録後、Museの設定や招待関連の画面に入力欄が表示される場合があります。画面の最新案内を確認してください。</p></div>
+      <div class="faq"><h3>Q. 招待コードの特典は必ず受け取れますか？</h3><p>必ず受け取れるとは限りません。コードの有効性、対象条件、入力期限、上限などによって異なる可能性があるため、入力後に画面で適用状況を確認してください。</p></div>
+      <div class="faq"><h3>Q. Museは無料で使えますか？</h3><p>Metaの日本向け発表では、多くの基本機能が無料で利用できるとされています。有料プランや最新の料金は公式ページで確認してください。</p></div>
+      <div class="faq"><h3>Q. 招待コードを入力するためにパスワードを教える必要はありますか？</h3><p>招待コードを入力するために、第三者へパスワードを伝える必要はありません。ログインや登録は公式アプリ・公式サイトから行い、アカウント情報を外部の人やサイトに渡さないでください。</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap sources">
+      <h2>公式情報・参考リンク</h2>
+      <ul>
+        <li><a href="https://about.fb.com/ja/news/2026/10/muse-personal-ai-agent-launches-in-japan/" target="_blank" rel="noopener noreferrer">Meta公式：Museを日本で提供開始</a></li>
+        <li><a href="https://about.fb.com/ja/news/2026/09/introducing-muse-personal-ai-agent/" target="_blank" rel="noopener noreferrer">Meta公式：Museの紹介と仕組み</a></li>
+        <li><a href="https://muse.ai/join" target="_blank" rel="noopener noreferrer">Muse公式参加ページ</a></li>
+      </ul>
+      <p class="small">このページは個人による紹介・解説ページです。MetaまたはMuseの公式サイトではありません。特典の提供・コードの有効性を保証するものではありません。情報は変更されることがあるため、公式の最新表示をご確認ください。</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Muse Guide</strong> — 招待コード・使い方ガイド</p>
+    <p>運営者：サイト公開前に運営者情報・お問い合わせ先を必要に応じて追加してください。</p>
+    <p>最終更新日：2026年10月28日</p>
+  </div>
+</footer>
+
+<script>
+  const copyButton = document.getElementById('copyButton');
+  const inviteCode = document.getElementById('inviteCode');
+  const copyStatus = document.getElementById('copyStatus');
+  copyButton.addEventListener('click', async () => {
+    const code = inviteCode.textContent.trim();
+    if (!code || code === 'BFIG0Y') {
+      copyStatus.textContent = '公開前にBFIG0Yを実際の招待コードに置き換えてください。';
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(code);
+      copyStatus.textContent = '招待コードをコピーしました。';
+    } catch (e) {
+      copyStatus.textContent = 'コピーできない場合は、コードを長押ししてコピーしてください。';
+    }
+  });
+</script>
+</body>
+</html>
